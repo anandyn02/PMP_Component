@@ -50,13 +50,13 @@ open class DesignableTextField: UITextField {
         return textRect
     }
 
-    @IBInspectable var padding: CGFloat = 0
-    @IBInspectable var textPadding: CGFloat = 0
+    @IBInspectable public var padding: CGFloat = 0
+    @IBInspectable public var textPadding: CGFloat = 0
 
-    @IBInspectable var leadingImage: UIImage? { didSet { updateView() }}
-    @IBInspectable var trailingImage: UIImage? { didSet { updateView() }}
-    @IBInspectable var color: UIColor = .lightGray { didSet { updateView() }}
-    @IBInspectable var imageColor: UIColor = .black { didSet { updateView() }}
+    @IBInspectable public var leadingImage: UIImage? { didSet { updateView() }}
+    @IBInspectable public var trailingImage: UIImage? { didSet { updateView() }}
+    @IBInspectable public var color: UIColor = .lightGray { didSet { updateView() }}
+    @IBInspectable public var imageColor: UIColor = .black { didSet { updateView() }}
     
     let buttonRect = CGRect(x: 0, y: 0, width: 20, height: 20)
 
